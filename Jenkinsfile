@@ -13,10 +13,8 @@ pipeline {
     }
     stage('Building image') {
       steps{
-        
-          dockerImage = docker.build("alokaryan/docker-image-test") + ":$BUILD_NUMBER"
-        
-      }
+        dockerImage = docker.build("alokaryan/docker-image-test")
+         }
     }
     stage('Deploy Image') {
       steps{
