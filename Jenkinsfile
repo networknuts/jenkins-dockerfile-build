@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry = "alokaryan/docker-image-test"
-    registryCredential = 'dockerhub-cred'
+    registryCredential = 'dockercreds'
     dockerImage = ''
   }
   agent any
