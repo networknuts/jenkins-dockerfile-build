@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:centos7
 MAINTAINER networknuts <alok@networknuts.net>
 RUN yum install httpd -y
 COPY index.html /var/www/html/
